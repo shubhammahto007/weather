@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather">
+        <h1>Weather Forecast</h1>
+        <h2>Let's Check How The Weather is in</h2><br><br><br>
+        <form action="" class="searchform" id="searchform">
+            <input 
+                type="search"
+                placeholder="Enter Name of the City"
+                class="search-input"
+                id="cityInput"
+                value=""
+            >
+            <button type="submit" class="searchbutton">Search</button>
+        </form><br>
+
+        <p id="loadingmessage" style="display: none; text-align: center;">loading...</p>
+        <p id="errormessage" class="error-message" style="display: none;"></p>
+        <div id="weatherDetails" class="weather-Details" style="display: none;"></div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

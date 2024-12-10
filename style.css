@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(65, 6, 6, 0.7);
+    font-family: "Raleway", serif;
+}
+body {
+    background-image: url("https://images.pexels.com/photos/29679453/pexels-photo-29679453.jpeg?cs=srgb&dl=pexels-carlos-lopez-2147591480-29679453.jpg&fm=jpg&_gl=1*1vgu1j2*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzc1Mzg1My4xNy4xLjE3MzM3NTM5MjcuMC4wLjA.");
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.weather {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter:(px);
+    border: 2px solid palegoldenrod;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    height: 550px;
+    border-radius: 50px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: "Roboto Condensed", serif;
+}
+h2 {
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.5rem;
+}
+.searchform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.search-input {
+    height: 35px;
+    padding: 0.5rem;
+    background-color: black ;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-right: 1rem;
+}
+.searchbutton {
+    padding: 0.5rem;
+    height: 35px;
+    width: 90px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.weather-Details {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+#loadingmessage,
+#errormessage {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .weather {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .search-input {
+        width: 60%;
+        height: 40px;
+    }
+    .searchbutton {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather {
+        padding: 1rem;
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .search-input {
+        width: 70%;
+    }
+    .searchbutton {
+        width: 70px;
+    }
+}
